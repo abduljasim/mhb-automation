@@ -1,0 +1,14 @@
+package mhbmobile;
+
+import org.testng.annotations.Test;
+
+public class MHBmobileAutomation extends MHBmobileLogin {
+
+	@Test
+	public void mhbmain() {
+	
+		MHBmobileBroadcast brdcst = new MHBmobileBroadcast();
+		brdcst.mhbbroadcast();
+	}
+
+}
