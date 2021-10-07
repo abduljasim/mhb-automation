@@ -7,8 +7,11 @@ public class MHBmobileAutomation extends MHBmobileLogin {
 	@Test
 	public void mhbmain() {
 	
-		MHBmobileBroadcast brdcst = new MHBmobileBroadcast();
-		brdcst.mhbbroadcast();
+//		MHBmobileBroadcast brdcst = new MHBmobileBroadcast();
+//		brdcst.mhbbroadcast();
+		
+		MHBmobileFreeText fretxt = new MHBmobileFreeText();
+		fretxt.mhbfreetxt();
 	}
 
 }
