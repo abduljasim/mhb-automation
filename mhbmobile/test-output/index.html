@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\jge5636\AppData\Local\Temp\testng-eclipse-1868648418\testng-customsuite.xml</span>
+                    <span>C:\Users\jge5636\AppData\Local\Temp\testng-eclipse-1546208032\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,11 +130,46 @@
                   <a name="mhbmain">
                   </a> <!-- mhbmain -->
                   <span class="method-name">mhbmain</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@text=&apos;texting more button&apos;] (tried for 5 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at mhbmobile.MHBmobileFreeText.mhbfreetxt(MHBmobileFreeText.java:28)
-	at mhbmobile.MHBmobileAutomation.mhbmain(MHBmobileAutomation.java:14)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element (An element could not be located on the page using the given search parameters (XPATH=&apos;//*[@XCElementType=&apos;XCUIElementTypeButton&apos; and @accessibilityLabel=&apos;TAB_BAR_TEXTS_ITEM&apos; and @label=&apos;Texts&apos;]&apos;))  (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;CORPJGE5636A&apos;, ip: &apos;10.129.8.43&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{device.majorVersion=13, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, applicationClearData=false, reservationDuration=240, install.only.for.update=false, device.version=13.2, automationName=XCUITest, javascriptEnabled=true, testName=MHB login test, ehmUrl=https://vpndemous3.experitest.com:443/agent-316, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, newSessionWaitTimeout=600, keystorePath=~/.android/debug.keystore, device.model=iPhone 8, appBuildVersion=, projectName=, ehmPrefixUrl=/agent-316, autoAcceptAlerts=false, dontStopAppOnReset=false, reportFormat=xml, fullReset=false, platform=IOS, deviceUDID=47e116086c4c1ffce80e3bc03fa0c0d46896765d, desired={deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, bundleId=com.mobileheartbeat.mhcure.enterprise, platformName=iOS, testName=MHB login test}, device.serialNumber=47e116086c4c1ffce80e3bc03fa0c0d46896765d, locationServicesAuthorized=false, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, autoWebview=false, udid=47e116086c4c1ffce80e3bc03fa0c0d46896765d, platformName=IOS, device.screenSize=750x1334, useKeystore=false, test.type=Mobile, commandTimeouts=120000, appiumVersion=1.8.0, bundleId=com.mobileheartbeat.mhcure.enterprise, reportUrl=https://vpndemous3.experitest.com:443/reporter/#/test/504/project/Default/, installOnlyForUpdate=false, waitForDeviceTimeout=120000, device.name=iPhone 8 HCA-002, reportTestId=504, autoGrantPermissions=false, appReleaseVersion=, takeScreenshots=true, gridNodePort=7809}]
+Session ID: CLOUD-SID:2021-10-11_23-42-44-3290dc30-7ef5-4d24-aa11-be449bdfc0ad
+*** Element info: {Using=xpath, value=//*[@XCElementType=&apos;XCUIElementTypeButton&apos; and @accessibilityLabel=&apos;TAB_BAR_TEXTS_ITEM&apos; and @label=&apos;Texts&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at mhbmobile.MHBmobileGroupText.mhbgrouptext(MHBmobileGroupText.java:10)
+	at mhbmobile.MHBmobileAutomation.mhbmain(MHBmobileAutomation.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,21 +198,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@text=&apos;texting more button&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;CORPJGE5636A&apos;, ip: &apos;10.33.93.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 30 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -187,7 +207,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\jge5636\AppData\Local\Temp\testng-eclipse-1868648418\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\jge5636\AppData\Local\Temp\testng-eclipse-1546208032\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -240,12 +260,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'mhbmain')
 data.setCell(0, 2, 'mhbmobile.MHBmobileAutomation')
-data.setCell(0, 3, 56556);
+data.setCell(0, 3, 1981);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -280,11 +300,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">mhbmain</span>
-                <span class="method-start">16562 ms</span>
+                <span class="method-start">19111 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73128 ms</span>
+                <span class="method-start">21098 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
