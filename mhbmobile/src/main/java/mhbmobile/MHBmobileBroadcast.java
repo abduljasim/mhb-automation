@@ -10,13 +10,13 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 
         new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts")));
         driver.findElement(By.xpath("//*[@text='Broadcasts']")).click();
-        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
         driver.findElement(By.xpath("//*[@text='Groups']")).click();
 
 //GROUP BROADCAST Anywhere
 
         // FREE TEXT Broadcasts Text
-        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
+        new WebDriverWait(driver, 15).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
         driver.findElement(By.id("Corp Test Users - Anywhere")).click();
         driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
         driver.findElement(By.id("broadcast send button")).click();
