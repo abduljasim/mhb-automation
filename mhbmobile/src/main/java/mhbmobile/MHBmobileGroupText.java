@@ -82,8 +82,7 @@ public class MHBmobileGroupText extends MHBmobileLogin {
 		
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='More Info']")));
 		driver.findElement(By.xpath("//*[@text='More Info']")).click();
-		//driver.executeScript("seetest:client.swipeWhileNotFound(\"Down\", 20, 500, 'NATIVE', \"xpath=//*[@accessibilityLabel='TEXT_DETAILS_LEAVE_LABEL']\", 0, 1000, 5, true)");
-		
+		// scroll screen down
         driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));		
 		driver.findElement(By.xpath("//*[@accessibilityLabel='TEXT_DETAILS_LEAVE_CELL']")).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='DIALOGUE_LONG_TITLE_SUBMIT_BUTTON']")));
