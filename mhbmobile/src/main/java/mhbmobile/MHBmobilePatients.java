@@ -10,15 +10,14 @@ public class MHBmobilePatients extends MHBmobileLogin {
 
 		public void mhbpatients() {
 			// Assigned Patient tab - Verify Patient Details
-//			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patients']"))).click();
-//			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder='Search']"))).sendKeys("JASIM");
-//			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='search']"))).click();
-//			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
-//			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patient Details']"))).click();
-//			// Verify Patient detail - age
-//			driver.findElement(By.xpath("//*[@text='PATIENT_DETAILS_AGE_DYNAMIC_LABEL']")).getText();
-//			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patient']"))).click();
-//			
+			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patients']"))).click();
+			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder='Search']"))).sendKeys("JASIM");
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='search']"))).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patient Details']"))).click();
+			driver.findElement(By.xpath("//*[@text='PATIENT_DETAILS_AGE_DYNAMIC_LABEL']")).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patient']"))).click();
+		
 			// Take a photo + upload + send broadcast to care team
 			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patients']"))).click();
 			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder='Search']"))).sendKeys("JASIM");
@@ -37,34 +36,31 @@ public class MHBmobilePatients extends MHBmobileLogin {
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='Patients']"))).click();
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
 			
+			// Take a photo + Delete it + cancel
+			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patients']"))).click();
+			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder='Search']"))).sendKeys("JASIM");
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='search']"))).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
+			driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));	
+			driver.findElement(By.xpath("//*[@text='PATIENT_CAMERA_CELL']")).click();
+			driver.findElement(By.xpath("//*[@XCElementType='XCUIElementTypeButton' and @label='Take Photos']")).click();
+			new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='CAMERA_CAPTURE_BUTTON']"))).click();
+			new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='CAMERA_REVIEW_PHOTOS_BUTTON']"))).click();
+			new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Delete']"))).click();
+			new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='DIALOGUE_LONG_NO_TITLE_SUBMIT_BUTTON']"))).click();
+			new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Cancel']"))).click();
 			
-			
-			// Send it to Broadcast to Care Team by clicking on the name
-			// click on send button
-			
-			// Click on patient's tab
-			// Search for a patient- type in patient's name then click search
-			// Click on patient's name
-			// Scroll down and click on Camera
-			// Take a photo then review it
-			// Delete a photo by clicking on delete button
-			// click Yes to submit
-			// click cancel to get out of camera
-			
-			// Click on patient's tab
-			// Search for a patient- type in patient's name then click search
-			// Click on patient's name
-			// Scroll down and click on Camera
-			// Click on View photos
-			// click on a photo
-			// click Close
-			
-			// Assigned Units tab
-			
-			
-			
-			
-			
-			
+			// Review a photo
+			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patients']"))).click();
+			new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder='Search']"))).sendKeys("JASIM");
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='search']"))).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
+			driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));	
+			driver.findElement(By.xpath("//*[@text='PATIENT_CAMERA_CELL']")).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@XCElementType='XCUIElementTypeButton' and @label='View Photos']"))).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='PATIENT_PHOTO_SESSION_SENSITIVE_IMAGE_VIEW' and (./preceding-sibling::* | ./following-sibling::*)[@text='Today 2:02 PM']]"))).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@XCElementType='XCUIElementTypeButton' and @label='Close']"))).click();
+			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@XCElementType='XCUIElementTypeButton' and @label='Patient']"))).click();
+							
 		}
 }

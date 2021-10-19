@@ -16,8 +16,11 @@ public class MHBmobileAutomation extends MHBmobileLogin {
 //		MHBmobileGroupText grptxt = new MHBmobileGroupText();
 //		grptxt.mhbgrouptext(); 
 		
-		MHBmobilePatients patienttab = new MHBmobilePatients();
-		patienttab.mhbpatients();
+//		MHBmobilePatients patienttab = new MHBmobilePatients();
+//		patienttab.mhbpatients();
+		
+		MHBmobileContacts contacts = new MHBmobileContacts();
+		contacts.mhbcontatcs();
 		
 	}
 
