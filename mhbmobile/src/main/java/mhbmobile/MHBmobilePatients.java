@@ -25,7 +25,6 @@ public class MHBmobilePatients extends MHBmobileLogin {
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='search']"))).click();
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
 			driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));	
-			driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
 			driver.findElement(By.xpath("//*[@text='PATIENT_CAMERA_CELL']")).click();
 			driver.findElement(By.xpath("//*[@XCElementType='XCUIElementTypeButton' and @label='Take Photos']")).click();
 			new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='CAMERA_CAPTURE_BUTTON']"))).click();
@@ -37,6 +36,7 @@ public class MHBmobilePatients extends MHBmobileLogin {
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON']"))).click();
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='Patients']"))).click();
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
+			
 			
 			
 			// Send it to Broadcast to Care Team by clicking on the name
