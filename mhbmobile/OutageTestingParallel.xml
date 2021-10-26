@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SuiteOT" parallel="methods" thread-count="2">
-  <test name="TestOT">
+<suite name="ParallelOutageTesting" parallel="tests" thread-count="2">
+  <test name="ParallelDeviceOne">
+	
+	<parameter name="udid" value ="47e116086c4c1ffce80e3bc03fa0c0d46896765d"/>
+	<parameter name="deviceName" value="iPhone 8"/>
+  	<parameter name="port" value="8888" />
     <classes>
-      <class name="outagetesting.ParallelOutageTesting"/>
+      <class name="outagetesting.ParallelOutageTestingOne"/>
     </classes>
-  </test> <!-- TestOT -->
-</suite> <!-- SuiteOT -->
+  </test> 
+  <test name="ParallelDeviceTwo">
+	<parameter name="udid" value="a33b310fd378610e2e3cfa7b5a8395a08adc9f0d"/>
+  	<parameter name="deviceName" value="iPhone X" />
+  	<parameter name="port" value="8889" />
+    <classes>
+      <class name="outagetesting.ParallelOutageTestingTwo"/>
+    </classes>
+  </test> 
+</suite>

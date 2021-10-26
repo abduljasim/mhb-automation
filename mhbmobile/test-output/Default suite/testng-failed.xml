@@ -6,6 +6,7 @@
       <class name="outagetesting.ParallelOutageTesting">
         <methods>
           <include name="usertest2"/>
+          <include name="usertest1"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

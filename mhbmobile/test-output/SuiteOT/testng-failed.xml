@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="methods" name="Failed suite [SuiteOT]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="methods" name="TestOT(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [SuiteOT]" guice-stage="DEVELOPMENT">
+  <parameter name="mhburl" value="https://vpndemous3.experitest.com/wd/hub"/>
+  <parameter name="mhbUser" value="corpsvctst1"/>
+  <parameter name="mhbPassword" value="Enabled1"/>
+  <test thread-count="2" parallel="tests" name="TestOutage iPhone-8(failed)">
+    <parameter name="deviceModel" value="iPhone 8 HCA-002"/>
     <classes>
       <class name="outagetesting.ParallelOutageTesting">
         <methods>
@@ -12,5 +16,18 @@
         </methods>
       </class> <!-- outagetesting.ParallelOutageTesting -->
     </classes>
-  </test> <!-- TestOT(failed) -->
+  </test> <!-- TestOutage iPhone-8(failed) -->
+  <test thread-count="2" parallel="tests" name="TestOutage iPhone-11(failed)">
+    <parameter name="deviceModel" value="iPhone 11 HCA-006"/>
+    <classes>
+      <class name="outagetesting.ParallelOutageTesting">
+        <methods>
+          <include name="usertest2"/>
+          <include name="usertest1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- outagetesting.ParallelOutageTesting -->
+    </classes>
+  </test> <!-- TestOutage iPhone-11(failed) -->
 </suite> <!-- Failed suite [SuiteOT] -->

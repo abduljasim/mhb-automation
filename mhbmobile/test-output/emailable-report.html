@@ -8,103 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">SuiteOT</th></tr>
-<tr><td><a href="#t0">TestOT</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">51,377</td><td></td><td></td></tr>
+<tr><th colspan="8">ParallelOutageTesting</th></tr>
+<tr><td><a href="#t0">ParallelDeviceOne</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">57,231</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ParallelDeviceTwo</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">76,880</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">134,111</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SuiteOT</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOT &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">outagetesting.ParallelOutageTesting</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1635211467138</td><td rowspan="1">84</td></tr><tr><th colspan="4">TestOT &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">outagetesting.ParallelOutageTesting</td><td><a href="#m1">usertest1</a></td><td rowspan="1">1635211439703</td><td rowspan="1">25625</td></tr><tr class="failedeven"><td><a href="#m2">usertest2</a></td><td rowspan="1">1635211441630</td><td rowspan="1">25502</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParallelOutageTesting</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ParallelDeviceOne &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">outagetesting.ParallelOutageTestingOne</td><td><a href="#m0">usertest1</a></td><td rowspan="1">1635276108007</td><td rowspan="1">31293</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ParallelDeviceTwo &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">outagetesting.ParallelOutageTestingTwo</td><td><a href="#m1">usertest2</a></td><td rowspan="1">1635276108885</td><td rowspan="1">50036</td></tr></tbody>
 </table>
-<h2>TestOT</h2><h3 id="m0">outagetesting.ParallelOutageTesting#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Can&apos;t delete appium session CLOUD-SID:2021-10-26_01-23-43-65163548-2ed9-4fe1-8525-17fb70b10410, session was not found. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;CORPJGE5636A&apos;, ip: &apos;10.155.80.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=15, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, applicationClearData=false, reservationDuration=240, install.only.for.update=false, device.version=15.0.2, automationName=XCUITest, javascriptEnabled=true, testName=MHB login test, ehmUrl=https://vpndemous3.experitest.com:443/agent-316, cloudViewLink=https://vpndemous3.experitest.com:443/agent-316/#/h6o2wNp2cy7kYQJx?1, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, newSessionWaitTimeout=600, keystorePath=~/.android/debug.keystore, device.model=iPhone X, appBuildVersion=, projectName=, ehmPrefixUrl=/agent-316, autoAcceptAlerts=false, dontStopAppOnReset=false, reportFormat=xml, fullReset=false, platform=IOS, deviceUDID=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, desired={deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, bundleId=com.mobileheartbeat.mhcure.enterprise, platformName=iOS, testName=MHB login test}, device.serialNumber=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, locationServicesAuthorized=false, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, autoWebview=false, udid=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, platformName=IOS, device.screenSize=1125x2436, useKeystore=false, test.type=Mobile, commandTimeouts=120000, appiumVersion=1.8.0, bundleId=com.mobileheartbeat.mhcure.enterprise, reportUrl=https://vpndemous3.experitest.com:443/reporter/#/test/679/project/Default/, installOnlyForUpdate=false, waitForDeviceTimeout=120000, device.name=iPhone X HCA-004, reportTestId=679, autoGrantPermissions=false, appReleaseVersion=, takeScreenshots=true, gridNodePort=7787}]
-Session ID: CLOUD-SID:2021-10-26_01-23-43-65163548-2ed9-4fe1-8525-17fb70b10410
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:482)
-	at outagetesting.ParallelLogin.tearDown(ParallelLogin.java:35)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">outagetesting.ParallelOutageTesting#usertest1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error (An unknown server-side error occurred. status=&apos;false&apos;. Failed to complete internal method: &apos;elementSendText args: [NATIVE, xpath=(//*[@accessibilityLabel=&apos;LOGIN_USER_INPUT&apos;])[1], 0, corpgenmhbtst1]&apos;, details: Failed to send text to &apos;xpath=(//*[@accessibilityLabel=&apos;LOGIN_USER_INPUT&apos;])[1]&apos;. Send text timed out.)  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;CORPJGE5636A&apos;, ip: &apos;10.155.80.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=15, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, applicationClearData=false, reservationDuration=240, install.only.for.update=false, device.version=15.0.2, automationName=XCUITest, javascriptEnabled=true, testName=MHB login test, ehmUrl=https://vpndemous3.experitest.com:443/agent-316, cloudViewLink=https://vpndemous3.experitest.com:443/agent-316/#/h6o2wNp2cy7kYQJx?1, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, newSessionWaitTimeout=600, keystorePath=~/.android/debug.keystore, device.model=iPhone X, appBuildVersion=, projectName=, ehmPrefixUrl=/agent-316, autoAcceptAlerts=false, dontStopAppOnReset=false, reportFormat=xml, fullReset=false, platform=IOS, deviceUDID=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, desired={deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, bundleId=com.mobileheartbeat.mhcure.enterprise, platformName=iOS, testName=MHB login test}, device.serialNumber=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, locationServicesAuthorized=false, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, autoWebview=false, udid=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, platformName=IOS, device.screenSize=1125x2436, useKeystore=false, test.type=Mobile, commandTimeouts=120000, appiumVersion=1.8.0, bundleId=com.mobileheartbeat.mhcure.enterprise, reportUrl=https://vpndemous3.experitest.com:443/reporter/#/test/679/project/Default/, installOnlyForUpdate=false, waitForDeviceTimeout=120000, device.name=iPhone X HCA-004, reportTestId=679, autoGrantPermissions=false, appReleaseVersion=, takeScreenshots=true, gridNodePort=7787}]
-Session ID: CLOUD-SID:2021-10-26_01-23-43-65163548-2ed9-4fe1-8525-17fb70b10410
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at outagetesting.ParallelOutageTesting.usertest1(ParallelOutageTesting.java:19)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">outagetesting.ParallelOutageTesting#usertest2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session CLOUD-SID:2021-10-26_01-23-43-65163548-2ed9-4fe1-8525-17fb70b10410 could not be found (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;CORPJGE5636A&apos;, ip: &apos;10.155.80.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{device.majorVersion=15, dontGoHomeOnQuit=false, device.os=iOS, noReset=false, applicationClearData=false, reservationDuration=240, install.only.for.update=false, device.version=15.0.2, automationName=XCUITest, javascriptEnabled=true, testName=MHB login test, ehmUrl=https://vpndemous3.experitest.com:443/agent-316, cloudViewLink=https://vpndemous3.experitest.com:443/agent-316/#/h6o2wNp2cy7kYQJx?1, device.manufacture=Apple, instrumentApp=false, device.category=PHONE, autoDismissAlerts=false, newSessionWaitTimeout=600, keystorePath=~/.android/debug.keystore, device.model=iPhone X, appBuildVersion=, projectName=, ehmPrefixUrl=/agent-316, autoAcceptAlerts=false, dontStopAppOnReset=false, reportFormat=xml, fullReset=false, platform=IOS, deviceUDID=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, desired={deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, bundleId=com.mobileheartbeat.mhcure.enterprise, platformName=iOS, testName=MHB login test}, device.serialNumber=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, locationServicesAuthorized=false, deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos;, reportDirectory=reports, autoWebview=false, udid=a33b310fd378610e2e3cfa7b5a8395a08adc9f0d, platformName=IOS, device.screenSize=1125x2436, useKeystore=false, test.type=Mobile, commandTimeouts=120000, appiumVersion=1.8.0, bundleId=com.mobileheartbeat.mhcure.enterprise, reportUrl=https://vpndemous3.experitest.com:443/reporter/#/test/679/project/Default/, installOnlyForUpdate=false, waitForDeviceTimeout=120000, device.name=iPhone X HCA-004, reportTestId=679, autoGrantPermissions=false, appReleaseVersion=, takeScreenshots=true, gridNodePort=7787}]
-Session ID: CLOUD-SID:2021-10-26_01-23-43-65163548-2ed9-4fe1-8525-17fb70b10410
-*** Element info: {Using=xpath, value=//*[@text=&apos;DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:383)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:54)
-	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:149)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:462)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementsByXPath(DefaultGenericMobileDriver.java:144)
-	at io.appium.java_client.AppiumDriver.findElementsByXPath(AppiumDriver.java:181)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:344)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElements(DefaultGenericMobileDriver.java:50)
-	at io.appium.java_client.AppiumDriver.findElements(AppiumDriver.java:145)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at outagetesting.ParallelOutageTesting.usertest2(ParallelOutageTesting.java:39)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ParallelDeviceOne</h2><h3 id="m0">outagetesting.ParallelOutageTestingOne#usertest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ParallelDeviceTwo</h2><h3 id="m1">outagetesting.ParallelOutageTestingTwo#usertest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
