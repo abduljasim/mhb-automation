@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.google.common.collect.ImmutableMap;
-
 public class MHBmobileContacts extends MHBmobileLogin{
 	public void mhbcontatcs() {
 		// unfavorite a contact
