@@ -31,13 +31,15 @@ public class MHBmobileLogin {
     }
     
   //  @Test
-    public void MhbLogn(){
-        driver.findElement(By.id("LOGIN_USER_INPUT")).sendKeys("corpsvctst1");
-        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.xpath("LOGIN_PW_INPUT")));
-        driver.findElement(By.id("LOGIN_PW_INPUT")).sendKeys("Enabled1");
-        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("Login")));
-        driver.findElement(By.id("Login")).click();
-    }
+//    public void MhbLogn(){
+//        driver.findElement(By.id("LOGIN_USER_INPUT")).sendKeys("hcaqa-351s");
+//        driver.findElement(By.xpath("//*[@text='DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON']")).click();
+//        driver.findElement(By.id("LOGIN_USER_INPUT")).sendKeys("corpsvctst1");
+//        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.xpath("LOGIN_PW_INPUT")));
+//        driver.findElement(By.id("LOGIN_PW_INPUT")).sendKeys("Enabled1");
+//        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("Login")));
+//        driver.findElement(By.id("Login")).click();
+//    }
 
     @AfterMethod
     public void tearDown(){
