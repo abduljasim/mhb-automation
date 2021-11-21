@@ -2,45 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-26T14:21:26 CDT" name="ParallelOutageTesting" finished-at="2021-10-26T14:22:43 CDT" duration-ms="76880">
+  <suite started-at="2021-11-21T07:05:25 CST" name="ParallelOutageTesting" finished-at="2021-11-21T07:22:06 CST" duration-ms="1000699">
     <groups>
     </groups>
-    <test started-at="2021-10-26T14:21:26 CDT" name="ParallelDeviceOne" finished-at="2021-10-26T14:22:23 CDT" duration-ms="57231">
-      <class name="outagetesting.ParallelOutageTestingOne">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:outagetesting.ParallelOutageTestingOne@a530d0a]" started-at="2021-10-26T14:21:26 CDT" name="setUp" finished-at="2021-10-26T14:21:47 CDT" duration-ms="21796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[47e116086c4c1ffce80e3bc03fa0c0d46896765d]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[iPhone 8]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[8888]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="usertest1()[pri:0, instance:outagetesting.ParallelOutageTestingOne@a530d0a]" started-at="2021-10-26T14:21:48 CDT" name="usertest1" finished-at="2021-10-26T14:22:19 CDT" duration-ms="31293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- usertest1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:outagetesting.ParallelOutageTestingOne@a530d0a]" started-at="2021-10-26T14:22:19 CDT" name="tearDown" finished-at="2021-10-26T14:22:23 CDT" duration-ms="4114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- outagetesting.ParallelOutageTestingOne -->
-    </test> <!-- ParallelDeviceOne -->
-    <test started-at="2021-10-26T14:21:26 CDT" name="ParallelDeviceTwo" finished-at="2021-10-26T14:22:43 CDT" duration-ms="76880">
+    <test started-at="2021-11-21T07:05:25 CST" name="ParallelDeviceTwo" finished-at="2021-11-21T07:18:09 CST" duration-ms="763309">
       <class name="outagetesting.ParallelOutageTestingTwo">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:outagetesting.ParallelOutageTestingTwo@12aba8be]" started-at="2021-10-26T14:21:26 CDT" name="setUp" finished-at="2021-10-26T14:21:48 CDT" duration-ms="22689" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:outagetesting.ParallelOutageTestingTwo@12aba8be]" started-at="2021-11-21T07:05:25 CST" name="setUp" finished-at="2021-11-21T07:05:47 CST" duration-ms="21941" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,15 +28,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="usertest2()[pri:0, instance:outagetesting.ParallelOutageTestingTwo@12aba8be]" started-at="2021-10-26T14:21:48 CDT" name="usertest2" finished-at="2021-10-26T14:22:38 CDT" duration-ms="50036" status="PASS">
+        <test-method signature="usertest2()[pri:0, instance:outagetesting.ParallelOutageTestingTwo@12aba8be]" started-at="2021-11-21T07:05:47 CST" name="usertest2" finished-at="2021-11-21T07:18:00 CST" duration-ms="732346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usertest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:outagetesting.ParallelOutageTestingTwo@12aba8be]" started-at="2021-10-26T14:22:38 CDT" name="tearDown" finished-at="2021-10-26T14:22:43 CDT" duration-ms="4147" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:outagetesting.ParallelOutageTestingTwo@12aba8be]" started-at="2021-11-21T07:18:00 CST" name="tearDown" finished-at="2021-11-21T07:18:09 CST" duration-ms="9006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- outagetesting.ParallelOutageTestingTwo -->
     </test> <!-- ParallelDeviceTwo -->
+    <test started-at="2021-11-21T07:05:25 CST" name="ParallelDeviceOne" finished-at="2021-11-21T07:22:06 CST" duration-ms="1000699">
+      <class name="outagetesting.ParallelOutageTestingOne">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:outagetesting.ParallelOutageTestingOne@a530d0a]" started-at="2021-11-21T07:05:25 CST" name="setUp" finished-at="2021-11-21T07:05:46 CST" duration-ms="21195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[47e116086c4c1ffce80e3bc03fa0c0d46896765d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPhone 8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8888]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="usertest1()[pri:0, instance:outagetesting.ParallelOutageTestingOne@a530d0a]" started-at="2021-11-21T07:05:46 CST" name="usertest1" finished-at="2021-11-21T07:21:57 CST" duration-ms="970208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usertest1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:outagetesting.ParallelOutageTestingOne@a530d0a]" started-at="2021-11-21T07:21:57 CST" name="tearDown" finished-at="2021-11-21T07:22:06 CST" duration-ms="9258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- outagetesting.ParallelOutageTestingOne -->
+    </test> <!-- ParallelDeviceOne -->
   </suite> <!-- ParallelOutageTesting -->
 </testng-results>

@@ -188,7 +188,6 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
         driver.findElement(By.xpath("//*[@text='DASHBOARD_PAGE_LABEL']")).click();
        // new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("//*[@text='Patients']")));
 
-
 	}
 
 }

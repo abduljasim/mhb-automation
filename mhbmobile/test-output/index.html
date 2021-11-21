@@ -127,21 +127,6 @@
           <div class="suite-ParallelOutageTesting-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">outagetesting.ParallelOutageTestingTwo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="usertest2">
-                  </a> <!-- usertest2 -->
-                  <span class="method-name">usertest2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ParallelOutageTesting-class-passed -->
-          <div class="suite-ParallelOutageTesting-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">outagetesting.ParallelOutageTestingOne</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -150,6 +135,21 @@
                   <a name="usertest1">
                   </a> <!-- usertest1 -->
                   <span class="method-name">usertest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelOutageTesting-class-passed -->
+          <div class="suite-ParallelOutageTesting-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">outagetesting.ParallelOutageTestingTwo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="usertest2">
+                  </a> <!-- usertest2 -->
+                  <span class="method-name">usertest2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,18 +222,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'usertest2')
-data.setCell(0, 2, 'outagetesting.ParallelOutageTestingTwo')
-data.setCell(0, 3, 50036);
+data.setCell(0, 1, 'usertest1')
+data.setCell(0, 2, 'outagetesting.ParallelOutageTestingOne')
+data.setCell(0, 3, 970208);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'usertest1')
-data.setCell(1, 2, 'outagetesting.ParallelOutageTestingOne')
-data.setCell(1, 3, 31293);
+data.setCell(1, 1, 'usertest2')
+data.setCell(1, 2, 'outagetesting.ParallelOutageTestingTwo')
+data.setCell(1, 3, 732346);
 window.suiteTableData['ParallelOutageTesting']= { tableData: data, tableDiv: 'times-div-ParallelOutageTesting'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 16 minutes</span>
               <div id="times-div-ParallelOutageTesting">
               </div> <!-- times-div-ParallelOutageTesting -->
             </div> <!-- times-div -->
@@ -276,28 +276,25 @@ return data;
               <div class="chronological-class-name">outagetesting.ParallelOutageTestingOne</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">usertest1</span>
-                <span class="method-start">21812 ms</span>
+                <span class="method-start">21224 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">outagetesting.ParallelOutageTestingTwo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">usertest2</span>
-                <span class="method-start">22690 ms</span>
+                <span class="method-start">21942 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">754297 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">outagetesting.ParallelOutageTestingOne</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53111 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">outagetesting.ParallelOutageTestingTwo</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">72727 ms</span>
+                <span class="method-start">991435 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,19 +8,19 @@ public class MHBmobileAutomation extends MHBmobileLogin {
 	public void mhbmain() {
 	
 //		MHBmobileBroadcast brdcst = new MHBmobileBroadcast();
-//		brdcst.mhbbroadcast();
-//		
+//		brdcst.mhbbroadcast(); //~5 min
+	
 //		MHBmobileFreeText fretxt = new MHBmobileFreeText();
-//		fretxt.mhbfreetxt();
+//		fretxt.mhbfreetxt(); //~2.5
 //		
 //		MHBmobileGroupText grptxt = new MHBmobileGroupText();
 //		grptxt.mhbgrouptext(); 
 		
 //		MHBmobilePatients patienttab = new MHBmobilePatients();
 //		patienttab.mhbpatients();
-		
-		MHBmobileContacts contacts = new MHBmobileContacts();
-		contacts.mhbcontatcs();
+//		
+//		MHBmobileContacts contacts = new MHBmobileContacts();
+//		contacts.mhbcontatcs();
 		
 	}
 
