@@ -8,23 +8,27 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 
 	public void mhbbroadcast() {
 
-        new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts")));
-        driver.findElement(By.xpath("//*[@text='Broadcasts']")).click();
+        if(new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts"))).isDisplayed())
+        {
+        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts"))).click();
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
         driver.findElement(By.xpath("//*[@text='Groups']")).click();
-
+        }else
+        {
+        System.out.println("Restart");
+        }
 //GROUP BROADCAST Anywhere
 
         // FREE TEXT Broadcasts Text
         new WebDriverWait(driver, 15).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
         driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Anywhere");
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 
         // CANCEL Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Cancel");
         driver.findElement(By.id("Cancel")).click();
 
         // PATIENTS Broadcasts Text
@@ -46,14 +50,14 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 
         // URGENT Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcasts Urgent Testing");
         driver.findElement(By.id("broadcast urgent button")).click();
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 
         // OVERRIDE Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast OVERRIDE Text");
         driver.findElement(By.id("BROADCAST_COMPOSE_RECIVER_BUTTON")).click();
         driver.findElement(By.id("Anywhere")).click();
         driver.findElement(By.id("broadcast send button")).click();
@@ -63,13 +67,13 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 
         // FREE TEXT Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Hospital/All Units")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast Hospitals All Units");
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 
         // CANCEL Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Hospital/All Units")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast Hospitals All Units-cancel");
         driver.findElement(By.id("Cancel")).click();
 
         // PATIENTS Broadcasts Text
@@ -91,14 +95,14 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 
         // URGENT Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Hospital/All Units")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast All units URGENT Text");
         driver.findElement(By.id("broadcast urgent button")).click();
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 
         // OVERRIDE Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Hospital/All Units")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Broadcasts OVERRIDE Group Broadcasts Text");
         driver.findElement(By.id("BROADCAST_COMPOSE_RECIVER_BUTTON")).click();
         driver.findElement(By.id("Hospital Only")).click();
         driver.findElement(By.id("broadcast send button")).click();
@@ -108,13 +112,13 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 
         // FREE TEXT Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Selected Unit")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation GROUP BROADCAST Selected Units");
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 
         // Testing CANCEL Broadcasts Text - Selected Unit
         driver.findElement(By.id("Corp Test Users - Selected Unit")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast CANCEL Broadcasts Text - Selected Unit");
         driver.findElement(By.id("Cancel"));
 
         // PATIENTS Broadcasts Text
@@ -136,14 +140,14 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 
         // URGENT Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Selected Unit")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast URGENT Text - selected unit");
         driver.findElement(By.id("broadcast urgent button")).click();
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 
         // OVERRIDE Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Selected Unit")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast Override Text - selected unit");
         driver.findElement(By.id("BROADCAST_COMPOSE_RECIVER_BUTTON")).click();
         driver.findElement(By.id("Hospital Only")).click();
         driver.findElement(By.id("broadcast send button")).click();
