@@ -27,35 +27,35 @@ public class MHBmobileGroupText extends MHBmobileLogin {
 		driver.findElement(By.xpath("//*[@text='TEXT_FIELD_INPUT']")).sendKeys("Automation Group Text");
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting send button']")));
 		driver.findElement(By.xpath("//*[@text='texting send button']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting urgent button']")));
-//		driver.findElement(By.xpath("//*[@text='texting urgent button']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='TEXT_FIELD_INPUT']")));
-//		driver.findElement(By.xpath("//*[@text='TEXT_FIELD_INPUT']")).sendKeys("Automation urgent Group Text");
-//		driver.findElement(By.xpath("//*[@text='texting send button']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting more button']")));
-//		driver.findElement(By.xpath("//*[@text='texting more button']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Quick Pick']")));
-//		driver.findElement(By.xpath("//*[@text='Quick Pick']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='MESSAGE_TEXT_LABEL']")));
-//		driver.findElement(By.xpath("//*[@text='MESSAGE_TEXT_LABEL']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting send button']")));
-//		driver.findElement(By.xpath("//*[@text='texting send button']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting more button']")));
-//		driver.findElement(By.xpath("//*[@text='texting more button']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patient Pick']")));
-//		driver.findElement(By.xpath("//*[@text='Patient Pick']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='PATIENTS_BED_LABEL']")));
-//		driver.findElement(By.xpath("//*[@text='PATIENTS_BED_LABEL']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting send button']")));
-//		driver.findElement(By.xpath("//*[@text='texting send button']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting more button']")));
-//		driver.findElement(By.xpath("//*[@text='texting more button']")).click();
-//		driver.findElement(By.xpath("//*[@text='Camera']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='CAMERA_CAPTURE_BUTTON']")));
-//		driver.findElement(By.xpath("//*[@text='CAMERA_CAPTURE_BUTTON']")).click();
-//		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Send']")));
-//		driver.findElement(By.xpath("//*[@text='Send']")).click();
-//		
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting urgent button']")));
+		driver.findElement(By.xpath("//*[@text='texting urgent button']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='TEXT_FIELD_INPUT']")));
+		driver.findElement(By.xpath("//*[@text='TEXT_FIELD_INPUT']")).sendKeys("Automation urgent Group Text");
+		driver.findElement(By.xpath("//*[@text='texting send button']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting more button']")));
+		driver.findElement(By.xpath("//*[@text='texting more button']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Quick Pick']")));
+		driver.findElement(By.xpath("//*[@text='Quick Pick']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='MESSAGE_TEXT_LABEL']")));
+		driver.findElement(By.xpath("//*[@text='MESSAGE_TEXT_LABEL']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting send button']")));
+		driver.findElement(By.xpath("//*[@text='texting send button']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting more button']")));
+		driver.findElement(By.xpath("//*[@text='texting more button']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patient Pick']")));
+		driver.findElement(By.xpath("//*[@text='Patient Pick']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='PATIENTS_BED_LABEL']")));
+		driver.findElement(By.xpath("//*[@text='PATIENTS_BED_LABEL']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting send button']")));
+		driver.findElement(By.xpath("//*[@text='texting send button']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting more button']")));
+		driver.findElement(By.xpath("//*[@text='texting more button']")).click();
+		driver.findElement(By.xpath("//*[@text='Camera']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='CAMERA_CAPTURE_BUTTON']")));
+		driver.findElement(By.xpath("//*[@text='CAMERA_CAPTURE_BUTTON']")).click();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Send']")));
+		driver.findElement(By.xpath("//*[@text='Send']")).click();
+		
 		// Add testfour
 		
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='More Info']")));
@@ -77,7 +77,6 @@ public class MHBmobileGroupText extends MHBmobileLogin {
 		
 		// Leave Group
 
-		
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='More Info']")));
 		driver.findElement(By.xpath("//*[@text='More Info']")).click();
 		// scroll screen down

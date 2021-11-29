@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [ParallelOutageTesting]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="ParallelDeviceOne(failed)">
-    <parameter name="port" value="8888"/>
-    <parameter name="udid" value="47e116086c4c1ffce80e3bc03fa0c0d46896765d"/>
-    <parameter name="deviceName" value="iPhone 8"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="outagetesting.ParallelOutageTestingOne">
+      <class name="mhbmobile.MHBmobileAutomation">
         <methods>
-          <include name="usertest1"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
-        </methods>
-      </class> <!-- outagetesting.ParallelOutageTestingOne -->
-    </classes>
-  </test> <!-- ParallelDeviceOne(failed) -->
-  <test thread-count="2" parallel="tests" name="ParallelDeviceTwo(failed)">
-    <parameter name="port" value="8889"/>
-    <parameter name="udid" value="a33b310fd378610e2e3cfa7b5a8395a08adc9f0d"/>
-    <parameter name="deviceName" value="iPhone X"/>
-    <classes>
-      <class name="outagetesting.ParallelOutageTestingTwo">
-        <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="usertest2"/>
+          <include name="mhbmain"/>
         </methods>
-      </class> <!-- outagetesting.ParallelOutageTestingTwo -->
+      </class> <!-- mhbmobile.MHBmobileAutomation -->
     </classes>
-  </test> <!-- ParallelDeviceTwo(failed) -->
-</suite> <!-- Failed suite [ParallelOutageTesting] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
