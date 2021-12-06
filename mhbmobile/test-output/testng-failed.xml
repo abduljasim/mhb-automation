@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mhbmobile.MHBmobileAutomation">
+      <class name="androidmhb.AndroidMHBmobileAutomation">
         <methods>
-          <include name="setUp"/>
+          <include name="androidmhbmain"/>
           <include name="tearDown"/>
-          <include name="mhbmain"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- mhbmobile.MHBmobileAutomation -->
+      </class> <!-- androidmhb.AndroidMHBmobileAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

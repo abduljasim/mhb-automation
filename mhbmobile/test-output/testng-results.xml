@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-01T13:57:21 CST" name="Default suite" finished-at="2021-12-01T14:01:10 CST" duration-ms="229195">
+  <suite started-at="2021-12-02T14:47:07 CST" name="Default suite" finished-at="2021-12-02T14:49:18 CST" duration-ms="131645">
     <groups>
     </groups>
-    <test started-at="2021-12-01T13:57:21 CST" name="Default test" finished-at="2021-12-01T14:01:10 CST" duration-ms="229195">
+    <test started-at="2021-12-02T14:47:07 CST" name="Default test" finished-at="2021-12-02T14:49:18 CST" duration-ms="131645">
       <class name="androidmhb.AndroidMHBmobileAutomation">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:androidmhb.AndroidMHBmobileAutomation@3fb1549b]" started-at="2021-12-01T13:57:21 CST" name="setUp" finished-at="2021-12-01T13:57:35 CST" duration-ms="14176" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:androidmhb.AndroidMHBmobileAutomation@3fb1549b]" started-at="2021-12-02T14:47:07 CST" name="setUp" finished-at="2021-12-02T14:47:21 CST" duration-ms="14712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="androidmhbmain()[pri:0, instance:androidmhb.AndroidMHBmobileAutomation@3fb1549b]" started-at="2021-12-01T13:57:35 CST" name="androidmhbmain" finished-at="2021-12-01T14:01:01 CST" duration-ms="206085" status="PASS">
+        <test-method signature="androidmhbmain()[pri:0, instance:androidmhb.AndroidMHBmobileAutomation@3fb1549b]" started-at="2021-12-02T14:47:21 CST" name="androidmhbmain" finished-at="2021-12-02T14:49:10 CST" duration-ms="108722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- androidmhbmain -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:androidmhb.AndroidMHBmobileAutomation@3fb1549b]" started-at="2021-12-01T14:01:01 CST" name="tearDown" finished-at="2021-12-01T14:01:10 CST" duration-ms="8888" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:androidmhb.AndroidMHBmobileAutomation@3fb1549b]" started-at="2021-12-02T14:49:10 CST" name="tearDown" finished-at="2021-12-02T14:49:18 CST" duration-ms="8174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

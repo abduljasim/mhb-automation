@@ -9,54 +9,54 @@ import com.google.common.collect.ImmutableMap;
 public class MHBmobileHome extends MHBmobileLogin {
 	public void home() {
 		// Change status to Busy
-//		 if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Available"))).isDisplayed()) 
-//	       {
-//	    	   System.out.println("User status Available - Change it to Busy");
-//	    	   driver.findElement(By.id("Available")).click();
-//	    	   driver.findElement(By.id("PRESENCE_STATUS_CURRENT_STATUS_LABEL")).click();
-//	    	   driver.findElement(By.id("PRESENCE_STATUS_BUSY_BUTTON")).click();
-//	    	   driver.findElement(By.id("Done")).click();
-//	       } 
-//		 else 
-//	       {
-//		  //So on a shared device, that busy works the same way. If you log out while on busy and back in, it resets to available.
-//	    	   System.out.println("User status is busy");
-//	       }
-//		 
-//		 // Set a Custom Message Keep Message on Logout
-//		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PRESENCE_CELL"))).click();
-//		 // Add condition to check if the switch is already on - in to do list
-//		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_CUSTOM_MESSAGE_SWITCH"))).click();
-//		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_QUICK_PICK_BUTTON"))).click();
-//		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("MESSAGE_TEXT_LABEL"))).click();
-//		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_STATUS_LOGOUT_SWITCH"))).click();
-//		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Done"))).click();
-//		  
-//	     
-//	     // Assign units
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_UNIT_CELL"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("ASSIGNED_UNIT_EDIT_BUTTON"))).click();
-//	     if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNASSIGNED_UNIT_SECTION_HEADER_LABEL"))).isDisplayed()) 
-//	       {
-//		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNIT_SELECTION_BUTTON"))).click();
-//	       } 
-//		 else 
-//	       {
-//			 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNIT_SELECTION_BUTTON"))).click();
-//	       }
-//	     
-//
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNIT_DONE_BUTTON"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PAGE_LABEL"))).click();
-//	     
-//	     // Dynamic Roles
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_DR_CELL"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DR_LIST_CELL"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DR_INSTANCE_SELECTION_SWITCH"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_LONG_TITLE_SUBMIT_BUTTON"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DR_HEADING_LABEL"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PAGE_LABEL"))).click();
+		 if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Available"))).isDisplayed()) 
+	       {
+	    	   System.out.println("User status Available - Change it to Busy");
+	    	   driver.findElement(By.id("Available")).click();
+	    	   driver.findElement(By.id("PRESENCE_STATUS_CURRENT_STATUS_LABEL")).click();
+	    	   driver.findElement(By.id("PRESENCE_STATUS_BUSY_BUTTON")).click();
+	    	   driver.findElement(By.id("Done")).click();
+	       } 
+		 else 
+	       {
+		  //So on a shared device, that busy works the same way. If you log out while on busy and back in, it resets to available.
+	    	   System.out.println("User status is busy");
+	       }
+		 
+		 // Set a Custom Message Keep Message on Logout
+		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PRESENCE_CELL"))).click();
+		 // Add condition to check if the switch is already on - in to do list
+		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_CUSTOM_MESSAGE_SWITCH"))).click();
+		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_QUICK_PICK_BUTTON"))).click();
+		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("MESSAGE_TEXT_LABEL"))).click();
+		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_STATUS_LOGOUT_SWITCH"))).click();
+		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Done"))).click();
+		  
+	     
+	     // Assign units
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_UNIT_CELL"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("ASSIGNED_UNIT_EDIT_BUTTON"))).click();
+	     if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNASSIGNED_UNIT_SECTION_HEADER_LABEL"))).isDisplayed()) 
+	       {
+		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNIT_SELECTION_BUTTON"))).click();
+	       } 
+		 else 
+	       {
+			 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNIT_SELECTION_BUTTON"))).click();
+	       }
+	     
+
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("UNIT_DONE_BUTTON"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PAGE_LABEL"))).click();
+	     
+	     // Dynamic Roles
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_DR_CELL"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DR_LIST_CELL"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DR_INSTANCE_SELECTION_SWITCH"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_LONG_TITLE_SUBMIT_BUTTON"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DR_HEADING_LABEL"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PAGE_LABEL"))).click();
 	     
 	     // More 
 	     driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
@@ -138,30 +138,30 @@ public class MHBmobileHome extends MHBmobileLogin {
 	     new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("3"))).click();
 	     new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("4"))).click();
 	     
-//	     // forgot PIN
-//	     driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Lock"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Forgot PIN?"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_LONG_TITLE_SUBMIT_BUTTON"))).click();
-//	     driver.findElement(By.id("LOGIN_USER_INPUT")).sendKeys("corpsvctst1");
-//	     driver.findElement(By.id("LOGIN_PW_INPUT")).sendKeys("Enabled1");
-//	     driver.findElement(By.id("Login")).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("SET_PIN_CONTINUE_BUTTON"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_1_BUTTON"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_2_BUTTON"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_3_BUTTON"))).click();
-//	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_4_BUTTON"))).click();
-//	     
-//	     if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Verify your PIN"))).isDisplayed()) 
-//	       {
-//		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_1_BUTTON"))).click();
-//		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_2_BUTTON"))).click();
-//		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_3_BUTTON"))).click();
-//		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_4_BUTTON"))).click();
-//	       } 
-//	     else {
-//	    	 System.out.println("Try it again-This will be modified later");
-//	     }
+	     // forgot PIN
+	     driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Lock"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Forgot PIN?"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_LONG_TITLE_SUBMIT_BUTTON"))).click();
+	     driver.findElement(By.id("LOGIN_USER_INPUT")).sendKeys("corpsvctst1");
+	     driver.findElement(By.id("LOGIN_PW_INPUT")).sendKeys("Enabled1");
+	     driver.findElement(By.id("Login")).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("SET_PIN_CONTINUE_BUTTON"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_1_BUTTON"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_2_BUTTON"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_3_BUTTON"))).click();
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_4_BUTTON"))).click();
+	     
+	     if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Verify your PIN"))).isDisplayed()) 
+	       {
+		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_1_BUTTON"))).click();
+		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_2_BUTTON"))).click();
+		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_3_BUTTON"))).click();
+		     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_4_BUTTON"))).click();
+	       } 
+	     else {
+	    	 System.out.println("Try it again-This will be modified later");
+	     }
 	} //end of method
 
 }
