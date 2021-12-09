@@ -128,6 +128,7 @@ public class AndroidMHBDashboard extends AndroidMHBLogin {
 	     driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
 	     // Logout
 	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Logout']"))).click();
+	     System.out.println("Android Dashboard testing has Finished successfully");
 
 	}
 

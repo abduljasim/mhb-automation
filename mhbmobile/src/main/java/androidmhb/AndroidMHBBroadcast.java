@@ -244,6 +244,8 @@ public class AndroidMHBBroadcast extends AndroidMHBLogin {
 	        // Exit Broadcasts
 	        driver.findElement(By.xpath("//*[@contentDescription='TAB_BAR_DASHBOARD_ITEM']")).click();
 	        System.out.println("Finished from Broadcat Groups and Quick!");
+	        
+	        System.out.println("Braodcast Texting on Android has Finished successfully");
 
 
 	}
