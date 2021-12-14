@@ -15,15 +15,15 @@ public class AndroidMHBmobileAutomation extends AndroidMHBLogin {
 //		AndroidMHBFreeText afreetxt = new AndroidMHBFreeText();  //done
 //		afreetxt.androidmhbfreetxt(); 
 		
-//		MHBmobileGroupText agrptxt = new MHBmobileGroupText();
-//		agrptxt.mhbgrouptext(); 
+		AndroidMHBGroupText agrptxt = new AndroidMHBGroupText();
+		agrptxt.androidmhbgrouptext(); 
 		
 //		AndroidMHBPatients apatienttab = new AndroidMHBPatients(); //done
 //		apatienttab.androidmhbpatients();
 		
-		MHBmobileContacts acontacts = new MHBmobileContacts();
-		acontacts.mhbcontatcs();
-		
+//		MHBmobileContacts acontacts = new MHBmobileContacts();
+//		acontacts.mhbcontatcs();
+//		
 
 	}
 
