@@ -9,6 +9,11 @@ import com.google.common.collect.ImmutableMap;
 public class AndroidMHBDashboard extends AndroidMHBLogin {
 
 	public void androidmhbhome() {
+		
+		// =============karolyn============
+		// Test login - Invalid username
+		// Test login = Invalid password
+		// ===== end ======================
 		// Change status to Busy
 		 if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Available']"))).isDisplayed()) 
 	       {
@@ -43,8 +48,6 @@ public class AndroidMHBDashboard extends AndroidMHBLogin {
 			 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='action_done']"))).click();
 		 }
 
-		
-		  
 	     
 	     // Assign units
 	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Assigned Units']"))).click();

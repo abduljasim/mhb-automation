@@ -6,24 +6,23 @@ public class AndroidMHBmobileAutomation extends AndroidMHBLogin {
 	
 	@Test
 	public static void androidmhbmain() {
-//		AndroidMHBDashboard adashboard = new AndroidMHBDashboard();  //done
-//		adashboard.androidmhbhome();test
+		AndroidMHBDashboard adashboard = new AndroidMHBDashboard();  //11
+		adashboard.androidmhbhome();
 	
-//		AndroidMHBBroadcast abrdcst = new AndroidMHBBroadcast(); //done
-//		abrdcst.androidmhbbroadcast(); 
+		AndroidMHBBroadcast abrdcst = new AndroidMHBBroadcast(); // 26
+		abrdcst.androidmhbbroadcast(); 
 	
-//		AndroidMHBFreeText afreetxt = new AndroidMHBFreeText();  //done
-//		afreetxt.androidmhbfreetxt(); 
+		AndroidMHBFreeText afreetxt = new AndroidMHBFreeText();  // 11
+		afreetxt.androidmhbfreetxt(); 
 		
-		AndroidMHBGroupText agrptxt = new AndroidMHBGroupText();
+		AndroidMHBGroupText agrptxt = new AndroidMHBGroupText(); //10
 		agrptxt.androidmhbgrouptext(); 
 		
-//		AndroidMHBPatients apatienttab = new AndroidMHBPatients(); //done
-//		apatienttab.androidmhbpatients();
+		AndroidMHBPatients apatienttab = new AndroidMHBPatients(); //4
+		apatienttab.androidmhbpatients();
 		
-//		MHBmobileContacts acontacts = new MHBmobileContacts();
-//		acontacts.mhbcontatcs();
-//		
+		AndroidMHBContacts acontacts = new AndroidMHBContacts(); // 8
+		acontacts.androidmhbcontacts();	
 
 	}
 

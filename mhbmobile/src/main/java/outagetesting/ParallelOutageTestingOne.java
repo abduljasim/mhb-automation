@@ -18,11 +18,14 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 
+
+
+
 public class ParallelOutageTestingOne{
-    private String accessKey = "eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo1Mzc3LCJ4cC5wIjoxLCJ4cC5tIjoxNjI1MDYzMjI4MzczLCJleHAiOjE5NDE2NTU3NDEsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.LQk_SR9MzzqyIL1xBJuk92MgRs4aODn35_HrVp7bmXc";
+	private String accessKey = "eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo1Mzc3LCJ4cC5wIjoxLCJ4cC5tIjoxNjI1MDYzMjI4MzczLCJleHAiOjE5NDE2NTU3NDEsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.LQk_SR9MzzqyIL1xBJuk92MgRs4aODn35_HrVp7bmXc";
     static IOSDriver driver1 = null;
     DesiredCapabilities dc = new DesiredCapabilities();
-  static  List<String> qwuiclinks = Arrays.asList("cwd-1974s","cod-2570s","fwd-2619s","gcd-1974s","mad-1974s","mtd-2574s","ntd-1974s","sad-1974s","cpd-862s","trd-862s","efd-351s","nfd-351s","sod-351s","wfd-351s");
+    static  List<String> qwuiclinks = Arrays.asList("cwd-1974s","cod-2570s","fwd-2619s","gcd-1974s","mad-1974s","mtd-2574s","ntd-1974s","sad-1974s","cpd-862s","trd-862s","efd-351s","nfd-351s","sod-351s","wfd-351s");
     
     @Parameters({ "udid", "deviceName", "port"})
 	@BeforeTest
@@ -59,6 +62,7 @@ public class ParallelOutageTestingOne{
 	        new WebDriverWait(driver1, 50).until(ExpectedConditions.elementToBeClickable(By.id("Logout"))).click();
 	        new WebDriverWait(driver1, 50).until(ExpectedConditions.elementToBeClickable(By.id("LOGOUT_BUTTON"))).click();
 		} //End of For loop
+		
 	}
 	
 	 @AfterTest

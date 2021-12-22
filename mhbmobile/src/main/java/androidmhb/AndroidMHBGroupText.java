@@ -57,7 +57,7 @@ public class AndroidMHBGroupText extends AndroidMHBLogin {
 		// Patient Pick
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='message_entry_action_button']"))).click();
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Patient Pick']"))).click();
-        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='J.700 11']"))).click();
+        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='TESTER, APRFR']"))).click();
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='message_entry_send_button']"))).click();
 
 		// Camera - Send Photo
