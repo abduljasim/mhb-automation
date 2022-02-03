@@ -32,10 +32,13 @@ public class MHBmobilePatients extends MHBmobileLogin {
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='search']"))).click();
 			new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='PATIENTS_LIST_TABLE']/*[@text='PATIENTS_LIST_CELL'])[1]"))).click();
 			driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));	
-			if(new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.id("PATIENT_CAMERA_CELL"))).isDisplayed())
+			if(new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("PATIENT_CAMERA_CELL"))).isDisplayed())
 			{
-				new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("PATIENT_CAMERA_CELL"))).click();
+				new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("PATIENT_CAMERA_CELL"))).click();
 				new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("CAMERA_CAPTURE_BUTTON"))).click();
+			}
+			else {
+				driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
 			}
 
 			if(new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("CAMERA_REVIEW_PHOTOS_BUTTON"))).isDisplayed())
@@ -104,6 +107,7 @@ public class MHBmobilePatients extends MHBmobileLogin {
 			{
 				new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("texting send button"))).click();
 			}
-							
+					
+			System.out.println("Patient Tab Automation Passed");
 		}
 }

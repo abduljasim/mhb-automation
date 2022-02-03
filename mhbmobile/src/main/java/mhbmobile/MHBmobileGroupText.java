@@ -61,9 +61,9 @@ public class MHBmobileGroupText extends MHBmobileLogin {
 		driver.findElement(By.xpath("//*[@text='Send']")).click();
 		
 		// Add testfour
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='More Info']"))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='＋ Add Contact']"))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='CONTACT_LIST_SEACH_INPUT']"))).sendKeys("TestFour");
+		new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='More Info']"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='＋ Add Contact']"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='CONTACT_LIST_SEACH_INPUT']"))).sendKeys("TestFour");
 		driver.findElement(By.xpath("(//*[@text='CONTACTS_LIST_TABLE']/*/*[@text='Corp TestFour'])[1]")).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Continue']")));
 		driver.findElement(By.xpath("//*[@text='Continue']")).click();
@@ -82,10 +82,13 @@ public class MHBmobileGroupText extends MHBmobileLogin {
 		System.out.println("TestOne Left the group without saying goodbye!");
 	
 		// rename Group
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Corp TestOne, Corp TestThree, Corp TestTwo' and (./preceding-sibling::* | ./following-sibling::*)[@text='12:29 PM'] and (./preceding-sibling::* | ./following-sibling::*)[@text='Corp TestOne'] and (./preceding-sibling::* | ./following-sibling::*)[@text='Automation Group Text']]"))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='More Info']"))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder='Enter a Group Name']"))).sendKeys("Automation Group Texting");
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Corp TestOne, Corp TestThree, Corp TestTwo']"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='RECENT_TEXT_ITEM_CELL' and ./*[@text='RECENT_TEXT_PRESENCE_IMAGE']]"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='More Info']"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@placeholder='Enter a Group Name']"))).sendKeys("Automation Group Texting");
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Corp TestOne, Corp TestThree, Corp TestTwo']"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Texts']"))).click();
+		
+		System.out.println("Group Texting Automation Passed");
 		
 		
 

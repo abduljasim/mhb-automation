@@ -97,7 +97,7 @@ public class MHBmobileContacts extends MHBmobileLogin{
 		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Contacts"))).click();
 		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Dy. Roles"))).click();
 		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Contacts"))).click();
-		
+		System.out.println("Contact tab testing done!");
 	}
 
 }

@@ -25,8 +25,6 @@ public class MHBmobileHome extends MHBmobileLogin {
 		 
 		 // Set a Custom Message Keep Message on Logout
 		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PRESENCE_CELL"))).click();
-		 // Add condition to check if the switch is already on - in to do list
-		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_CUSTOM_MESSAGE_SWITCH"))).click();
 		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_QUICK_PICK_BUTTON"))).click();
 		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("MESSAGE_TEXT_LABEL"))).click();
 		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_STATUS_LOGOUT_SWITCH"))).click();
@@ -142,10 +140,10 @@ public class MHBmobileHome extends MHBmobileLogin {
 	     driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
 	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Lock"))).click();
 	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Forgot PIN?"))).click();
-	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_LONG_TITLE_SUBMIT_BUTTON"))).click();
-	     driver.findElement(By.id("LOGIN_USER_INPUT")).sendKeys("corpsvctst1");
-	     driver.findElement(By.id("LOGIN_PW_INPUT")).sendKeys("Enabled1");
-	     driver.findElement(By.id("Login")).click();
+	     new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("DIALOGUE_LONG_TITLE_SUBMIT_BUTTON"))).click();
+	     new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(By.id("LOGIN_USER_INPUT"))).sendKeys("corpsvctst1");
+	     new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(By.id("LOGIN_PW_INPUT"))).sendKeys("Enabled1");
+	     new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(By.id("Login"))).click();
 	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("SET_PIN_CONTINUE_BUTTON"))).click();
 	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_1_BUTTON"))).click();
 	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PIN_2_BUTTON"))).click();
