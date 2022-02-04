@@ -1,18 +1,17 @@
 package mhbmobile;
 
-import org.apache.log4j.*;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-
 public class MHBmobileBroadcast extends MHBmobileLogin {
-	//public static final Logger logger = LoggerFactory.getLogger(MHBmobileBroadcast.class);
-	private static final org.apache.log4j.Logger LOGGER = LogManager.getLogger(MHBmobileBroadcast.class);
+	static final Logger logger = LoggerFactory.getLogger(MHBmobileBroadcast.class);
 	public void mhbbroadcast() {
-
+		logger.info("I am in broadcast method");
+		
         if(new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts"))).isDisplayed())
         {
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts"))).click();
@@ -30,43 +29,45 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
         driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Anywhere");
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
-
-        // CANCEL Broadcasts Text
-        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Cancel");
-        driver.findElement(By.id("Cancel")).click();
-
-        // PATIENTS Broadcasts Text
-        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("broadcast more button")).click();
-        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
-        driver.findElement(By.xpath("//*[@id='Patients']")).click();
-        driver.findElement(By.id("PATIENTS_NAME_LABEL")).click();
-        driver.findElement(By.id("broadcast send button")).click();
-        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
-
-        // QUICK PICK Broadcasts Text
-        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("broadcast more button")).click();
-        driver.findElement(By.id("Quick Pick")).click();
-        driver.findElement(By.id("MESSAGE_TEXT_LABEL")).click();
-        driver.findElement(By.id("broadcast send button")).click();
-        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
-
-        // URGENT Broadcasts Text
-        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcasts Urgent Testing");
-        driver.findElement(By.id("broadcast urgent button")).click();
-        driver.findElement(By.id("broadcast send button")).click();
-        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
-
-        // OVERRIDE Broadcasts Text
-        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast OVERRIDE Text");
-        driver.findElement(By.id("BROADCAST_COMPOSE_RECIVER_BUTTON")).click();
-        driver.findElement(By.id("Anywhere")).click();
-        driver.findElement(By.id("broadcast send button")).click();
-        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
+		logger.error("There is an error");
+		logger.info("Test Passed");
+		
+//        // CANCEL Broadcasts Text
+//        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
+//        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Cancel");
+//        driver.findElement(By.id("Cancel")).click();
+//
+//        // PATIENTS Broadcasts Text
+//        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
+//        driver.findElement(By.id("broadcast more button")).click();
+//        new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
+//        driver.findElement(By.xpath("//*[@id='Patients']")).click();
+//        driver.findElement(By.id("PATIENTS_NAME_LABEL")).click();
+//        driver.findElement(By.id("broadcast send button")).click();
+//        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
+        
+//        // QUICK PICK Broadcasts Text
+//        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
+//        driver.findElement(By.id("broadcast more button")).click();
+//        driver.findElement(By.id("Quick Pick")).click();
+//        driver.findElement(By.id("MESSAGE_TEXT_LABEL")).click();
+//        driver.findElement(By.id("broadcast send button")).click();
+//        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
+//
+//        // URGENT Broadcasts Text
+//        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
+//        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcasts Urgent Testing");
+//        driver.findElement(By.id("broadcast urgent button")).click();
+//        driver.findElement(By.id("broadcast send button")).click();
+//        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
+//
+//        // OVERRIDE Broadcasts Text
+//        driver.findElement(By.id("Corp Test Users - Anywhere")).click();
+//        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("Automation Group Broadcast OVERRIDE Text");
+//        driver.findElement(By.id("BROADCAST_COMPOSE_RECIVER_BUTTON")).click();
+//        driver.findElement(By.id("Anywhere")).click();
+//        driver.findElement(By.id("broadcast send button")).click();
+//        driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 
 //GROUP BROADCAST Hospital/All Units
 
@@ -201,7 +202,14 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
 //        // Exit Broadcasts
 //        driver.findElement(By.xpath("//*[@text='DASHBOARD_PAGE_LABEL']")).click();
 //       // new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.id("//*[@text='Patients']")));
+		// log4j
 
+//		logger.trace("We've just greeted the user!");
+//		logger.debug("We've just greeted the user!");
+//		logger.info("We've just greeted the user!");
+//		logger.warn("We've just greeted the user!");
+
+//		logger.fatal("We've just greeted the user!");
 	}
 
 }

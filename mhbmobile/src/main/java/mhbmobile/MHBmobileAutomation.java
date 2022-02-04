@@ -1,6 +1,5 @@
 package mhbmobile;
 
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -9,12 +8,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
+
 import org.testng.Assert;
 
 
 
 public class MHBmobileAutomation extends MHBmobileLogin {
 
+	
 
 	@Test
 	public void mhbmain() {
@@ -27,8 +28,12 @@ public class MHBmobileAutomation extends MHBmobileLogin {
 //		dashboardreport.log(Status.PASS, "Dashboard Testing Passed");
 //		email = new ExtentEmailReporter("email.html");
 //		email.config().setDocumentTitle("MyReport");
+		
+		
+		
 		MHBmobileBroadcast brdcst = new MHBmobileBroadcast();
 		brdcst.mhbbroadcast(); //~5 min
+
 
 		//		MHBmobileFreeText fretxt = new MHBmobileFreeText();
 		//		fretxt.mhbfreetxt(); //~2.5

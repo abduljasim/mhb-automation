@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-03T11:48:15 CST" name="Default suite" finished-at="2022-02-03T11:50:08 CST" duration-ms="112420">
+  <suite started-at="2022-02-04T12:22:18 CST" name="Default suite" finished-at="2022-02-04T12:23:20 CST" duration-ms="61401">
     <groups>
     </groups>
-    <test started-at="2022-02-03T11:48:15 CST" name="Default test" finished-at="2022-02-03T11:50:08 CST" duration-ms="112420">
+    <test started-at="2022-02-04T12:22:18 CST" name="Default test" finished-at="2022-02-04T12:23:20 CST" duration-ms="61401">
       <class name="mhbmobile.MHBmobileAutomation">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:mhbmobile.MHBmobileAutomation@73700b80]" started-at="2022-02-03T11:48:15 CST" name="setUp" finished-at="2022-02-03T11:48:35 CST" duration-ms="19232" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mhbmobile.MHBmobileAutomation@10d307f1]" started-at="2022-02-04T12:22:18 CST" name="setUp" finished-at="2022-02-04T12:22:40 CST" duration-ms="21468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="mhbmain()[pri:0, instance:mhbmobile.MHBmobileAutomation@73700b80]" started-at="2022-02-03T11:48:35 CST" name="mhbmain" finished-at="2022-02-03T11:50:04 CST" duration-ms="89022" status="PASS">
+        <test-method signature="mhbmain()[pri:0, instance:mhbmobile.MHBmobileAutomation@10d307f1]" started-at="2022-02-04T12:22:40 CST" name="mhbmain" finished-at="2022-02-04T12:23:16 CST" duration-ms="36062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mhbmain -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mhbmobile.MHBmobileAutomation@73700b80]" started-at="2022-02-03T11:50:04 CST" name="tearDown" finished-at="2022-02-03T11:50:08 CST" duration-ms="4103" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mhbmobile.MHBmobileAutomation@10d307f1]" started-at="2022-02-04T12:23:16 CST" name="tearDown" finished-at="2022-02-04T12:23:20 CST" duration-ms="3760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
