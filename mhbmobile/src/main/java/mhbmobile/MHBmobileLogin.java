@@ -4,8 +4,6 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import java.net.MalformedURLException;
@@ -25,7 +23,7 @@ public class MHBmobileLogin {
         dc.setCapability("accessKey", accessKey);
         dc.setCapability("deviceQuery", "@os='ios' and @category='PHONE'");
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.mobileheartbeat.mhcure.enterprise");
-        driver = new IOSDriver(new URL("https://vpndemous3.experitest.com/wd/hub"), dc);
+        driver = new IOSDriver(new URL("https://hca-new.experitest.com/wd/hub"), dc);
         driver.findElement(By.id("LOGIN_USER_INPUT")).sendKeys("corpsvctst1");
         driver.findElement(By.id("LOGIN_PW_INPUT")).sendKeys("Enabled1");
         driver.findElement(By.id("Login")).click();

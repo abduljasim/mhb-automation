@@ -28,6 +28,15 @@ public class MHBmobileGroupText extends MHBmobileLogin {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='Continue']")));
 		driver.findElement(By.xpath("//*[@text='Continue']")).click();
 		
+		 // if the contact is offline
+        if(new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='Corp TestTwo is offline']"))).isDisplayed())
+        {
+        System.out.println("Contact Status is OFFLINE!!");
+        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON']"))).click();
+        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Message"))).sendKeys("Automation Free 1:1 Text");
+        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("texting send button"))).click();
+        } 
+        
 		driver.findElement(By.xpath("//*[@text='TEXT_FIELD_INPUT']")).sendKeys("Automation Group Text");
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='texting send button']")));
 		driver.findElement(By.xpath("//*[@text='texting send button']")).click();

@@ -62,7 +62,7 @@ public class MHBmobileContacts extends MHBmobileLogin{
 		 new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@text='HOSPITAL_SELECTION_TABLE']/*[@text='UNIT_STATUS_CELL'])[1]"))).click();
 		 new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("CONTACTS_LIST_TABLE"))).click();
 
-		 if( new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("AVAILABLE"))).isDisplayed()) 
+		 if( new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("AVAILABLE"))).isDisplayed()) 
 	       {
 	    	   System.out.println("Contact Status is Available");
 	       } 

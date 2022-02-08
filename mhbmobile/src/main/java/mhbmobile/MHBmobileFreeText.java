@@ -15,6 +15,16 @@ public class MHBmobileFreeText extends MHBmobileLogin {
 	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("To:"))).sendKeys("TestTwo");
 	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Corp TestTwo, 4 Units in 2 Hospitals, Nurse"))).click();
 	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Continue"))).click();
+	        
+	        // if the contact is offline
+	        if(new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='Corp TestTwo is offline']"))).isDisplayed())
+	        {
+	        System.out.println("Contact Status is OFFLINE!!");
+	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@text='DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON']"))).click();
+	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Message"))).sendKeys("Automation Free 1:1 Text");
+	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("texting send button"))).click();
+	        } 
+
 	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Message"))).sendKeys("Automation Free 1:1 Text");
 	        new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("texting send button"))).click();
         } else
@@ -44,10 +54,8 @@ public class MHBmobileFreeText extends MHBmobileLogin {
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Camera"))).click();
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("CAMERA_CAPTURE_BUTTON"))).click();
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Send"))).click();
-        
-
-		
-
+        	
+        // future scripts - contact details check
 	}
 
 }
