@@ -10,7 +10,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-
 public class MHBmobileLogin {
     private String accessKey = "eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo1Mzc3LCJ4cC5wIjoxLCJ4cC5tIjoxNjI1MDYzMjI4MzczLCJleHAiOjE5NDE2NTU3NDEsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.LQk_SR9MzzqyIL1xBJuk92MgRs4aODn35_HrVp7bmXc";
     static IOSDriver driver = null;
@@ -31,7 +30,7 @@ public class MHBmobileLogin {
     }
 	
     // Test annotation is in the main class MHBmobileAutomation.java
-	
+
     @AfterMethod
     public void tearDown(){
           driver.quit();

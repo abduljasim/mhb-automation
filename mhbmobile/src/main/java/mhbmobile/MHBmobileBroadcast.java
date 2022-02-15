@@ -1,17 +1,13 @@
 package mhbmobile;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class MHBmobileBroadcast extends MHBmobileLogin {
-	static final Logger logger = LoggerFactory.getLogger(MHBmobileBroadcast.class);
 	public void mhbbroadcast() {
-		logger.info("I am in broadcast method");
-		
         if(new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts"))).isDisplayed())
         {
         new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Broadcasts"))).click();
@@ -29,8 +25,6 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
         driver.findElement(By.xpath("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Anywhere");
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
-		
-		logger.info("Test Passed");
 		
         // CANCEL Broadcasts Text
         driver.findElement(By.id("Corp Test Users - Anywhere")).click();

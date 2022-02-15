@@ -3,26 +3,19 @@ package mhbmobile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.google.common.collect.ImmutableMap;
 
 public class MHBmobileHome extends MHBmobileLogin {
+
 	public void home() {
+
+
 		// Change status to Busy
-		 if( new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Available"))).isDisplayed()) 
-	       {
-	    	   System.out.println("User status Available - Change it to Busy");
-	    	   driver.findElement(By.id("Available")).click();
-	    	   driver.findElement(By.id("PRESENCE_STATUS_CURRENT_STATUS_LABEL")).click();
-	    	   driver.findElement(By.id("PRESENCE_STATUS_BUSY_BUTTON")).click();
-	    	   driver.findElement(By.id("Done")).click();
-	       } 
-		 else 
-	       {
-		  //So on a shared device, that busy works the same way. If you log out while on busy and back in, it resets to available.
-	    	   System.out.println("User status is busy");
-	       }
-		 
+		new WebDriverWait(driver, 90).until(ExpectedConditions.elementToBeClickable(By.id("Available"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_STATUS_CURRENT_STATUS_LABEL"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_STATUS_BUSY_BUTTON"))).click();
+		new WebDriverWait(driver, 50).until(ExpectedConditions.elementToBeClickable(By.id("Done"))).click();
+
 		 // Set a Custom Message Keep Message on Logout
 		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PRESENCE_CELL"))).click();
 		 new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("PRESENCE_QUICK_PICK_BUTTON"))).click();
@@ -123,9 +116,9 @@ public class MHBmobileHome extends MHBmobileLogin {
 	     else {
 	    	 System.out.println("Are you sure you are testing a correct App?");
 	     }
-	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("More"))).click();
-	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("DASHBOARD_PAGE_LABEL"))).click();
-	     
+
+	     new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.id("Dashboard"))).click();
+
 	     // Lock screen
 	     driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
 	     new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("Lock"))).click();
@@ -160,6 +153,7 @@ public class MHBmobileHome extends MHBmobileLogin {
 	     else {
 	    	 System.out.println("Try it again-This will be modified later");
 	     }
+		
 	} //end of method
 
 }

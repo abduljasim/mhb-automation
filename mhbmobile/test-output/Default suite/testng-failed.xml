@@ -5,6 +5,8 @@
     <classes>
       <class name="mhbmobile.MHBmobileAutomation">
         <methods>
+          <include name="setup"/>
+          <include name="getResult"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="mhbmain"/>
