@@ -22,7 +22,7 @@ public class MHBmobileBroadcast extends MHBmobileLogin {
         // FREE TEXT Broadcasts Text
         new WebDriverWait(driver, 15).until(ExpectedConditions.elementToBeClickable(By.id("TAB_BAR_PATIENTS_ITEM")));
         driver.findElement(By.id("Corp Test Users - Anywhere")).click();
-        driver.findElement(By.xpath("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Anywhere");
+        driver.findElement(By.id("BROADCASTS_GROUPS_CELL")).sendKeys("AUTO-DIGI Broadcasts Testing - Anywhere");
         driver.findElement(By.id("broadcast send button")).click();
         driver.findElement(By.id("DIALOGUE_SHORT_TITLE_SUBMIT_BUTTON")).click();
 		

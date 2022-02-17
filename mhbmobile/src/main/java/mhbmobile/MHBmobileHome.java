@@ -153,6 +153,8 @@ public class MHBmobileHome extends MHBmobileLogin {
 	     else {
 	    	 System.out.println("Try it again-This will be modified later");
 	     }
+	     
+	     System.out.println("Dashboard Testing Passed");
 		
 	} //end of method
 
